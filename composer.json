@@ -1,0 +1,45 @@
+{
+    "name": "pmochine/inertia-test",
+    "description": "A description for.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "shadrix",
+            "email": "mail@philippmochine.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0",
+        "spatie/laravel-translatable": "^4.6",
+        "spatie/laravel-sluggable": "^2.6",
+        "vinkla/hashids": "^9.1",
+        "inertiajs/inertia-laravel": "^0.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inertiatest\\": "./src/Modules"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inertiatest\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Inertiatest\\InertiatestServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}

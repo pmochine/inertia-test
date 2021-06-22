@@ -1,0 +1,25 @@
+{
+    "name": "inertiatest/browser",
+    "description": "",
+    "authors": [
+        {
+            "name": "Philipp Mochine",
+            "email": "mail@philippmochine.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Inertiatest\\Browser\\Providers\\BrowserServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Inertiatest\\Browser\\": ""
+        }
+    }
+}
