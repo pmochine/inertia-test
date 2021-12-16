@@ -23,7 +23,8 @@ class TestCase extends Orchestra
         // We try to avoid that, for higher speed testing.
         // And plus we don't need to use defineDatabaseMigrations
         //  https://packages.tools/testbench/basic/define-databases.html#manually-execute-migrations
-
+        View::addLocation(__DIR__.'/Stubs');
+        
         $this->loadMigrationsFrom(__DIR__ . '/Migrations');
 
         $this->artisan('migrate', [
